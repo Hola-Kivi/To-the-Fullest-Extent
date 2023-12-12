@@ -32,6 +32,7 @@ In Go, _share memory by communicating_.
 		- immigrants cannot leave until Judge has left
 		- spectators can enter as log as the judge is not in the court
 		- ...
+
 ![image](./classicalProblem_diagram.png)
 
 ```go
