@@ -12,15 +12,15 @@ However, *concurrency* means out of order execution. In the finer level of granu
 
 This makes writing concurrent codes simpler as we can `coordinate the input from multiple subsystems` by easily composing the output together. 
 
-Besides, you can combine input channels with timeouts, cancellations, or messages to other subsystems. 
+Besides, we can combine input channels with timeouts, cancellations, or messages to other subsystems. 
 
 In Go, _share memory by communicating_. 
 
 > let's get hands dirty
 
- In coarse-grained level, there are 3 kinds of threads happening at the same time, therefore we can't identify who comes first and what action would be triggered at the specific statement.
+In coarse-grained level, there are 3 kinds of threads happening at the same time, therefore we can't identify who comes first and what action would be triggered at the specific statement.
 
- With the help of CSP, we could record states for each person, and then coordinate them using channels with cancellation, or messages to other person.
+With the help of CSP, we could record states for each person, and then coordinate them using channels with cancellation, or messages to other person.
 
 - This is what we can see in Figure 1.1, 
 	- Immigrants can enter, check in, wait in line, get confirmation, then leave
